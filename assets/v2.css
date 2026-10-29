@@ -286,6 +286,14 @@ html:not(.rail-on) .rail__item { flex: 1 1 280px; }
 .prose p, .prose li { color: #26334f; }
 .prose p + p, .prose ul { margin-top: 0.9em; }
 .prose a { color: var(--blue-ink); }
+.table-wrap { overflow-x: auto; margin-top: 1.2em; border: 1px solid var(--line-l); background: #fff; }
+.prose table { width: 100%; border-collapse: collapse; font-size: 15.5px; min-width: 560px; }
+.prose th, .prose td { text-align: left; vertical-align: top; padding: 14px 16px; border-bottom: 1px solid var(--line-l); color: #26334f; }
+.prose thead th { font-family: var(--mono); font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--paper); background: var(--navy); border-bottom: 0; }
+.prose tbody th { font-weight: 700; color: var(--navy); }
+.prose tbody tr:last-child > * { border-bottom: 0; }
+.tabular { font-variant-numeric: tabular-nums; white-space: nowrap; }
 .note { background: #fff; border: 1px solid var(--line-l); padding: 16px 20px; color: var(--mute-l); }
 
 /* JS-off and reduced motion: everything readable, nothing hidden, nothing moving */
