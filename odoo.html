@@ -24,6 +24,11 @@
   <link rel="stylesheet" href="assets/v2.css">
   <script>document.documentElement.classList.add('js','seen')</script>
   <script src="assets/v2.js" defer></script>
+  <!-- awl-allow craft.fake-testimonials: "Sales Tax Nexus Tracker" is a real product name on the Odoo Apps Store, not a placeholder brand -->
+  <!-- awl-allow craft.acid-dark: navy #0A1A3A and blue #3D7BFF are the owner's brand colours, supplied in the brief -->
+  <!-- awl-allow craft.mono-labels: the mono readouts are the brand's security-console voice (status, index, scramble) -->
+  <!-- awl-allow craft.gradient-text: the footer wordmark is filled with the logo's op-art brick pattern, not a gradient -->
+  <!-- awl-allow conv.social-proof: no reviews or customer logos yet on the Odoo Apps Store; nothing will be invented -->
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -47,7 +52,8 @@
       <div class="wrap">
         <p class="label mono" data-scramble>// Platform 5.2</p>
         <h1>Odoo</h1>
-        <p>Modules that extend Odoo, sold on the Odoo Apps Store.</p>
+        <p>25 modules for finance, approvals, inventory, AI and admin, sold on the Odoo Apps Store.</p>
+        <p class="page-head__cta"><a class="btn btn--blue" href="#modules">See modules</a></p>
       </div>
     </section>
     <section class="page-body" data-theme="light">
@@ -58,21 +64,206 @@
             <span class="mono statusbar__v"><span class="plat__led plat__led--live"></span>On the Odoo Apps Store</span>
           </div>
 
-          <h2>Our modules</h2>
-          <!-- ODOO SESSION: replace this comment and the paragraph below with one .mod card per real module, using this exact markup
-               (name, one-line job, supported Odoo versions, price, Odoo Apps Store link). Facts must match the store listing.
+          <h2 id="modules">Our modules</h2>
+          <p>25 modules, each published and tested on Odoo 15, 16, 17, 18, 19 and 20. Prices are as shown on the Odoo Apps Store; where a module needs another of ours, the store shows the total for both.</p>
+        </article>
+        <div class="mods-all">
+          <p class="label mono mods__group">// Finance and tax / 3</p>
           <div class="mods">
             <article class="mod">
-              <p class="mono mod__ver">Odoo 17 / 18 / 19</p>
-              <h3 class="mod__name">Module name</h3>
-              <p class="mod__job">One line on the job it does.</p>
-              <p class="mono mod__price">USD 00</p>
-              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/...">View on the Odoo Apps Store</a>
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Financial Reports</h3>
+              <p class="mod__job">Profit and Loss, Balance Sheet, Trial Balance, ledgers and aged receivables for Odoo Community, on screen, PDF and Excel.</p>
+              <p class="mono mod__price">USD 29.99</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/19.0/community_financial_reports" aria-label="View Financial Reports on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Customer Statements</h3>
+              <p class="mod__job">Customer statements with aging, automatic overdue reminders by email and credit holds on sale orders.</p>
+              <p class="mono mod__price">USD 69.99</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/19.0/bs_credit_control" aria-label="View Customer Statements on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Sales Tax Nexus Tracker</h3>
+              <p class="mod__job">Warns before you cross US state nexus, EU OSS, UK VAT or Canada GST/HST registration thresholds, from your posted invoices.</p>
+              <p class="mono mod__price">USD 79.00</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/19.0/bs_sales_tax_nexus" aria-label="View Sales Tax Nexus Tracker on the Odoo Apps Store">View on the Odoo Apps Store</a>
             </article>
           </div>
-          -->
-          <p>Our modules are listed on the Odoo Apps Store. This page is being updated with the full range.</p>
+          <p class="label mono mods__group">// Approvals / 4</p>
+          <div class="mods">
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Approval Workflows</h3>
+              <p class="mod__job">Multi-level approval on any button: conditions, approver users or groups, to-dos and a full approval history.</p>
+              <p class="mono mod__price">USD 16.99</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/19.0/smart_approvals" aria-label="View Approval Workflows on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Purchase Approval</h3>
+              <p class="mod__job">Purchase order approval by amount, with one or more levels and approver groups.</p>
+              <p class="mono mod__price">USD 27.98 with Approval Workflows</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/19.0/bs_purchase_approval" aria-label="View Purchase Approval on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Sale Order Approval</h3>
+              <p class="mod__job">Quotation and sales order approval by amount, with one or more levels and approver groups.</p>
+              <p class="mono mod__price">USD 27.98 with Approval Workflows</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/19.0/bs_sale_approval" aria-label="View Sale Order Approval on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Invoice Approval</h3>
+              <p class="mod__job">Approve vendor bills and customer invoices by amount before they are posted.</p>
+              <p class="mono mod__price">USD 27.98 with Approval Workflows</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/19.0/bs_invoice_approval" aria-label="View Invoice Approval on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+          </div>
+          <p class="label mono mods__group">// Inventory and labels / 5</p>
+          <div class="mods">
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Product Barcode Labels</h3>
+              <p class="mod__job">Product, price, shelf and lot labels on Avery sheets, thermal rolls and Zebra ZPL, with EAN-13, Code 128 and QR.</p>
+              <p class="mono mod__price">USD 69.99</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/19.0/bs_label_studio" aria-label="View Product Barcode Labels on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Product Labels</h3>
+              <p class="mod__job">Product labels on Avery L7160, L7651 and 5160 sheets with name, reference, price and barcode.</p>
+              <p class="mono mod__price">Free</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/19.0/bs_product_labels" aria-label="View Product Labels on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Product QR Code</h3>
+              <p class="mod__job">A QR code on every product and variant: generate in bulk, find products by scanning, print QR label sheets.</p>
+              <p class="mono mod__price">USD 10.99</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/19.0/bs_product_qrcode" aria-label="View Product QR Code on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Transfer Product Labels</h3>
+              <p class="mod__job">Print product labels from receipts and transfers, one label per unit moved.</p>
+              <p class="mono mod__price">USD 10.99</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/19.0/bs_picking_labels" aria-label="View Transfer Product Labels on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Prevent Negative Stock</h3>
+              <p class="mod__job">Blocks transfers that would push quantity on hand below zero, per product, category or location.</p>
+              <p class="mono mod__price">Free</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/19.0/bs_stock_no_negative" aria-label="View Prevent Negative Stock on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+          </div>
+          <p class="label mono mods__group">// AI and integration / 4</p>
+          <div class="mods">
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">MCP Server for Claude</h3>
+              <p class="mod__job">Connect Claude, ChatGPT, Cursor and other AI assistants to Odoo, with human approval of AI changes and a full audit log.</p>
+              <p class="mono mod__price">USD 99.99</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/19.0/mcp_gatekeeper" aria-label="View MCP Server for Claude on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">MCP OAuth 2.1 Login</h3>
+              <p class="mod__job">OAuth 2.1 sign-in for claude.ai, the Claude apps and ChatGPT. A free add-on for MCP Server for Claude.</p>
+              <p class="mono mod__price">USD 99.99 with MCP Server for Claude</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/19.0/mcp_gatekeeper_oauth" aria-label="View MCP OAuth 2.1 Login on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">MCP Connector Read-only</h3>
+              <p class="mod__job">A read-only MCP server: AI assistants search and read your data with an API key, under Odoo access rights.</p>
+              <p class="mono mod__price">Free</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/19.0/bs_mcp_readonly" aria-label="View MCP Connector Read-only on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">REST API and Webhooks</h3>
+              <p class="mod__job">JSON endpoints for any model, scoped API keys, OpenAPI 3 docs, rate limits and signed webhooks with retries.</p>
+              <p class="mono mod__price">USD 119.99</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/19.0/bs_rest_api" aria-label="View REST API and Webhooks on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+          </div>
+          <p class="label mono mods__group">// Admin and reporting / 3</p>
+          <div class="mods">
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Access Rights Management</h3>
+              <p class="mod__job">Hide menus, fields, buttons and tabs per user or group, and block create, edit, delete and export on the server.</p>
+              <p class="mono mod__price">USD 149.99</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/19.0/bs_access_guard" aria-label="View Access Rights Management on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Hide Menus by User</h3>
+              <p class="mod__job">Hide menus and apps per user or group. Administrators are never locked out.</p>
+              <p class="mono mod__price">Free</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/19.0/bs_hide_menu" aria-label="View Hide Menus by User on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Dashboard Builder</h3>
+              <p class="mod__job">KPI tiles with targets, 9 chart types and record lists from any model, with drill-down and drag-and-drop layout.</p>
+              <p class="mono mod__price">USD 130.00</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/modules/19.0/bs_dashboard_studio" aria-label="View Dashboard Builder on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+          </div>
+          <p class="label mono mods__group">// Backend themes / 6</p>
+          <div class="mods">
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Midnight Backend Theme</h3>
+              <p class="mod__job">Midnight navy and royal blue for every backend screen. Pure styling.</p>
+              <p class="mono mod__price">USD 39.99</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/themes/19.0/bs_backend_midnight" aria-label="View Midnight Backend Theme on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Indigo Backend Theme</h3>
+              <p class="mod__job">Deep indigo and violet for every backend screen. Pure styling.</p>
+              <p class="mono mod__price">USD 39.99</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/themes/19.0/bs_backend_indigo" aria-label="View Indigo Backend Theme on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Ocean Teal Backend Theme</h3>
+              <p class="mod__job">Teal and ocean blue for every backend screen. Pure styling.</p>
+              <p class="mono mod__price">USD 39.99</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/themes/19.0/bs_backend_ocean" aria-label="View Ocean Teal Backend Theme on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Graphite Backend Theme</h3>
+              <p class="mod__job">Graphite grey and amber for every backend screen. Pure styling.</p>
+              <p class="mono mod__price">USD 39.99</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/themes/19.0/bs_backend_graphite" aria-label="View Graphite Backend Theme on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Emerald Backend Theme</h3>
+              <p class="mod__job">Emerald and forest green for every backend screen. Pure styling.</p>
+              <p class="mono mod__price">USD 39.99</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/themes/19.0/bs_backend_emerald" aria-label="View Emerald Backend Theme on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+            <article class="mod">
+              <p class="mono mod__ver">Odoo 15 / 16 / 17 / 18 / 19 / 20</p>
+              <h3 class="mod__name">Crimson Backend Theme</h3>
+              <p class="mod__job">Crimson and wine red for every backend screen. Pure styling.</p>
+              <p class="mono mod__price">USD 39.99</p>
+              <a class="btn btn--sm" href="https://apps.odoo.com/apps/themes/19.0/bs_backend_crimson" aria-label="View Crimson Backend Theme on the Odoo Apps Store">View on the Odoo Apps Store</a>
+            </article>
+          </div>
 
+        </div>
+        <article class="prose prose--after">
           <h2>How we build for Odoo</h2>
           <ul>
             <li><strong>Clean installs.</strong> Modules follow Odoo's own conventions, so they install, upgrade and uninstall cleanly.</li>
@@ -83,6 +274,37 @@
           <h2>Buying, installing and support</h2>
           <p>Modules are bought and downloaded through the Odoo Apps Store, under its terms and refund policy. Support comes from the people who built the module: see our <a href="support.html">support page</a>, our <a href="sla.html">service level agreement</a> and our <a href="privacy.html">privacy policy</a>.</p>
         </article>
+      </div>
+    </section>
+
+    <section class="faq" data-theme="light" aria-labelledby="faq-title">
+      <div class="wrap faq__grid">
+        <div>
+          <p class="label mono">// Questions</p>
+          <h2 id="faq-title" class="faq__title">Before you install.</h2>
+        </div>
+        <div class="faq__list">
+          <details>
+            <summary>Which Odoo versions do you support?</summary>
+            <p>Every module is published for Odoo 15.0, 16.0, 17.0, 18.0, 19.0 and 20.0, and each release runs its automated tests on all six before it goes out.</p>
+          </details>
+          <details>
+            <summary>Community or Enterprise?</summary>
+            <p>Both. The modules only depend on parts of Odoo that both editions share, and they run on Odoo.sh and on your own server. Odoo Online does not accept third-party modules, so they cannot be installed there.</p>
+          </details>
+          <details>
+            <summary>What happens when I move to a new Odoo version?</summary>
+            <p>Download the build for your new version from the Odoo Apps Store and install it in your upgraded database. If you are migrating a database between major versions with one of our modules installed, <a href="support.html">contact us</a> first and we will help you plan it.</p>
+          </details>
+          <details>
+            <summary>How do refunds work?</summary>
+            <p>Every purchase, licence and refund goes through the Odoo Apps Store under its own terms. Separately, if a feature described on a module's store page does not work, we fix it free of charge.</p>
+          </details>
+          <details>
+            <summary>How do I get support?</summary>
+            <p>Use the Support button on your Odoo Apps Store order, or see our <a href="support.html">support page</a>. You reach the people who wrote the module.</p>
+          </details>
+        </div>
       </div>
     </section>
   </main>

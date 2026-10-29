@@ -332,7 +332,14 @@ html:not(.rail-on) .rail__item { flex: 1 1 280px; }
 .mod__ver, .mod__price { color: var(--blue-ink); text-transform: uppercase; letter-spacing: 0.12em; }
 .mod__name { font-weight: 850; font-stretch: 118%; text-transform: uppercase; letter-spacing: -0.02em; font-size: clamp(22px, 2.2vw, 32px); line-height: 1; }
 .mod__job { color: var(--mute-l); }
+.mod__price { font-variant-numeric: tabular-nums; }
+.page-head__cta { margin-top: clamp(24px, 3vw, 40px); }
 @media (min-width: 700px) { .mods { grid-template-columns: repeat(2, 1fr); } }
+.mods__group { margin: 2.6em 0 0; }
+.mods__group + .mods { margin-top: 0.9em; }
+.mods-all { margin-top: 0.4em; }
+.prose--after { margin-top: clamp(56px, 7vw, 96px); }
+@media (min-width: 1100px) { .mods-all .mods { grid-template-columns: repeat(3, 1fr); } }
 .prose strong { color: var(--navy); }
 .table-wrap { overflow-x: auto; margin-top: 1.2em; border: 1px solid var(--line-l); background: #fff; }
 .prose table { width: 100%; border-collapse: collapse; font-size: 15.5px; min-width: 560px; }
