@@ -241,7 +241,7 @@
   }
 
   // big headings rise through a mask
-  $$('.principles__title, .method__title, .apps__title, .faq__title, .seam__title').forEach(h => {
+  $$('.principles__title, .method__title, .platforms__title, .faq__title, .seam__title').forEach(h => {
     gsap.from(h, { yPercent: 40, opacity: 0, duration: 1.1, ease: 'expo.out', scrollTrigger: { trigger: h, start: 'top 85%' } });
   });
   gsap.from('.contact .line__in', { yPercent: 110, duration: 1.3, ease: 'expo.out', stagger: 0.1,
