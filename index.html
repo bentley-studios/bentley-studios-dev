@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bentley Studios | Secure apps for Atlassian products</title>
+  <meta name="description" content="Bentley Studios is an independent software studio in South Africa building secure, privacy-first apps for Jira, Confluence and other Atlassian products.">
+  <link rel="canonical" href="https://duncanbentley.github.io/bentley-studios-dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bentley Studios | Secure apps for Atlassian products">
+  <meta property="og:description" content="An independent software studio in South Africa building secure, privacy-first apps for Atlassian products.">
+  <meta property="og:url" content="https://duncanbentley.github.io/bentley-studios-dev/">
+  <meta property="og:image" content="https://duncanbentley.github.io/bentley-studios-dev/assets/social-card.png">
+  <meta property="og:image:width" content="2940">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="The Bentley Studios logo: a checkered navy and blue B beside the words Bentley Studios.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0a1a3a">
+  <meta name="color-scheme" content="dark light">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="assets/v2.css">
+  <script>document.documentElement.classList.add('js');try{if(sessionStorage.getItem('bs-loaded'))document.documentElement.classList.add('seen')}catch(e){}</script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1.3.27/dist/lenis.min.js" defer></script>
+  <script src="assets/v2.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Bentley Studios",
+    "url": "https://duncanbentley.github.io/bentley-studios-dev/",
+    "logo": "https://duncanbentley.github.io/bentley-studios-dev/assets/apple-touch-icon.png",
+    "email": "duncanmarcbentley@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Gqeberha", "addressCountry": "ZA" }
+  }
+  </script>
+  <!-- awl-allow craft.acid-dark: navy #0A1A3A and blue #3D7BFF are the owner's brand colours, supplied in the brief -->
+  <!-- awl-allow craft.eyebrows: the numbered section labels are the site's index, mirrored in the header navigation -->
+  <!-- awl-allow craft.mono-labels: the mono readouts are the brand's security-console voice (status, index, scramble) -->
+  <!-- awl-allow craft.gradient-text: the footer wordmark is filled with the logo's op-art brick pattern, not a gradient -->
+  <!-- awl-allow conv.social-proof: new studio, no apps launched or reviews yet; nothing will be invented -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- preloader (JS only, once per session) -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <img src="assets/mark.svg" alt="" width="72" height="72">
+      <div class="loader__bar"><span></span></div>
+      <p class="loader__count"><span data-count>000</span>%</p>
+    </div>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"></span></div>
+
+  <header class="hdr" data-hdr>
+    <a class="hdr__brand" href="./" aria-label="Bentley Studios home">
+      <img src="assets/lockup-dark.svg" alt="" width="1635" height="320">
+    </a>
+    <nav class="hdr__nav" aria-label="Main">
+      <a href="#security"><span class="mono">02</span> Security</a>
+      <a href="#principles"><span class="mono">03</span> Principles</a>
+      <a href="#method"><span class="mono">04</span> Method</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <a class="btn btn--sm" href="#contact" data-magnetic>Contact us</a>
+  </header>
+
+  <main id="main">
+
+    <!-- 01 HERO -->
+    <section class="hero" data-theme="dark" aria-labelledby="hero-title">
+      <canvas class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="label mono" data-scramble>// Apps for Atlassian products</p>
+        <h1 id="hero-title" class="hero__title">
+          <span class="line"><span class="line__in">Software</span></span>
+          <span class="line"><span class="line__in">you can</span></span>
+          <span class="line"><span class="line__in">trust.</span></span>
+        </h1>
+        <div class="hero__foot">
+          <p class="hero__lede">An independent studio in South Africa building focused, secure apps for Jira, Confluence and the rest of the Atlassian family.</p>
+          <div class="hero__actions">
+            <a class="btn" href="#contact" data-magnetic>Contact us</a>
+            <a class="btn btn--line" href="#security">Our security</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__meta mono" aria-hidden="true">
+        <span>Gqeberha, ZA</span>
+        <span>SAST GMT+2</span>
+        <span class="hero__scroll">Scroll</span>
+      </div>
+    </section>
+
+    <!-- marquee -->
+    <div class="marquee" aria-label="Our commitments: least privilege, privacy by design, no data selling, real support">
+      <div class="marquee__track" aria-hidden="true">
+        <div class="marquee__group">
+          <span>Least privilege</span><i></i><span>Privacy by design</span><i></i><span>Never sold</span><i></i><span>Real support</span><i></i>
+          <span>Least privilege</span><i></i><span>Privacy by design</span><i></i><span>Never sold</span><i></i><span>Real support</span><i></i>
+        </div>
+        <div class="marquee__group">
+          <span>Least privilege</span><i></i><span>Privacy by design</span><i></i><span>Never sold</span><i></i><span>Real support</span><i></i>
+          <span>Least privilege</span><i></i><span>Privacy by design</span><i></i><span>Never sold</span><i></i><span>Real support</span><i></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- 01 MANIFESTO -->
+    <section class="manifesto" data-theme="light" aria-labelledby="manifesto-label">
+      <div class="wrap">
+        <p id="manifesto-label" class="label mono"><span class="idx">01</span> What we believe</p>
+        <p class="manifesto__text" data-words>We would rather ship one app that does its job perfectly than ten that almost work. Every app we make asks for the least it needs, explains what it touches, and is supported by the person who wrote it.</p>
+      </div>
+    </section>
+
+    <!-- 02 SEAM (signature) -->
+    <section id="security" class="seam" data-theme="dark" aria-labelledby="seam-title">
+      <div class="seam__stage wrap">
+        <div class="seam__copy">
+          <p class="label mono"><span class="idx">02</span> Security and privacy</p>
+          <h2 id="seam-title" class="seam__title">Built in two halves. Locked as one.</h2>
+          <div class="seam__cues">
+            <div class="seam__cue">
+              <p class="mono seam__n">A / Least privilege</p>
+              <p>Each app requests the narrowest access that lets it do its job, and nothing more.</p>
+            </div>
+            <div class="seam__cue">
+              <p class="mono seam__n">B / Your data stays yours</p>
+              <p>We never sell your data or use it for advertising. Every app documents what it reads, what it stores and where.</p>
+            </div>
+            <div class="seam__cue">
+              <p class="mono seam__n">C / Locked tight</p>
+              <p>Security reports go straight to the top of the list, and we act on them as a priority.</p>
+            </div>
+          </div>
+        </div>
+        <div class="seam__art" aria-hidden="true">
+          <div class="seam__ring"></div>
+          <img class="seam__half seam__half--upper" src="assets/mark-upper.svg" alt="" width="360" height="360" loading="lazy" decoding="async">
+          <img class="seam__half seam__half--lower" src="assets/mark-lower.svg" alt="" width="360" height="360" loading="lazy" decoding="async">
+          <p class="seam__status mono"><span class="seam__led"></span><span data-status>Seam open</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 PRINCIPLES: stacking cards -->
+    <section id="principles" class="principles" data-theme="light" aria-labelledby="principles-title">
+      <div class="wrap">
+        <p class="label mono"><span class="idx">03</span> Principles</p>
+        <h2 id="principles-title" class="principles__title">Four rules for every app we ship.</h2>
+      </div>
+      <ol class="stack wrap">
+        <li class="card card--navy">
+          <span class="card__n mono">3.1</span>
+          <h3 class="card__title">Security first</h3>
+          <p class="card__text">Designed in from the first line of code, not bolted on before launch.</p>
+          <span class="card__bricks card__bricks--h" aria-hidden="true"></span>
+        </li>
+        <li class="card card--blue">
+          <span class="card__n mono">3.2</span>
+          <h3 class="card__title">Privacy by design</h3>
+          <p class="card__text">We collect as little as possible, keep it only as long as needed, and delete it when you uninstall.</p>
+          <span class="card__bricks card__bricks--v" aria-hidden="true"></span>
+        </li>
+        <li class="card card--white">
+          <span class="card__n mono">3.3</span>
+          <h3 class="card__title">Clean, fast design</h3>
+          <p class="card__text">Apps that feel at home in your Atlassian tools and stay out of your way.</p>
+          <span class="card__bricks card__bricks--h" aria-hidden="true"></span>
+        </li>
+        <li class="card card--ink">
+          <span class="card__n mono">3.4</span>
+          <h3 class="card__title">Real support</h3>
+          <p class="card__text">Questions go to the people who built the app, not a ticket queue.</p>
+          <span class="card__bricks card__bricks--v" aria-hidden="true"></span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 04 METHOD: horizontal rail -->
+    <section id="method" class="method" data-theme="dark" aria-labelledby="method-title">
+      <div class="method__pin">
+        <div class="wrap method__head">
+          <p class="label mono"><span class="idx">04</span> Method</p>
+          <h2 id="method-title" class="method__title">How an app gets made.</h2>
+        </div>
+        <ol class="rail">
+          <li class="rail__item">
+            <span class="rail__n">1</span>
+            <h3>Start with a real problem</h3>
+            <p>Every app begins with a workflow that wastes a team's time, described by the people who live with it.</p>
+          </li>
+          <li class="rail__item">
+            <span class="rail__n">2</span>
+            <h3>Decide the access first</h3>
+            <p>Before any code, we list the exact permissions the app needs and cut everything else.</p>
+          </li>
+          <li class="rail__item">
+            <span class="rail__n">3</span>
+            <h3>Build and test</h3>
+            <p>Small releases, tested against real projects, with performance checked on large instances.</p>
+          </li>
+          <li class="rail__item">
+            <span class="rail__n">4</span>
+            <h3>Publish and support</h3>
+            <p>Listed on the Atlassian Marketplace with clear docs, then looked after by the person who built it.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 05 APPS -->
+    <section id="apps" class="apps" data-theme="light" aria-labelledby="apps-title">
+      <div class="wrap apps__grid">
+        <div>
+          <p class="label mono"><span class="idx">05</span> Apps</p>
+          <h2 id="apps-title" class="apps__title">First release in development.</h2>
+        </div>
+        <div class="apps__body">
+          <div class="build" aria-hidden="true">
+            <div class="build__row"><span class="mono">status</span><span class="mono build__val" data-scramble-loop>in development</span></div>
+            <div class="build__bar"><span></span></div>
+          </div>
+          <p>Our first apps will be listed here and on the Atlassian Marketplace as soon as they launch. If your team has a workflow that wastes hours every week, tell us about it. The best apps start that way.</p>
+          <a class="link" href="mailto:duncanmarcbentley@gmail.com?subject=App%20idea">Suggest a workflow</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 FAQ -->
+    <section class="faq" data-theme="light" aria-labelledby="faq-title">
+      <div class="wrap faq__grid">
+        <div>
+          <p class="label mono"><span class="idx">06</span> Questions</p>
+          <h2 id="faq-title" class="faq__title">What admins ask first.</h2>
+        </div>
+        <div class="faq__list">
+          <details>
+            <summary>Can I install one of your apps today?</summary>
+            <p>Not yet. Our first apps are in development, and they will appear here and on the Atlassian Marketplace when they launch.</p>
+          </details>
+          <details>
+            <summary>What data will your apps access?</summary>
+            <p>Only what each app needs to work. Every listing will state exactly which permissions the app requests and why, and our <a href="privacy.html">privacy policy</a> sets out the rules every app follows.</p>
+          </details>
+          <details>
+            <summary>Do you sell or share data?</summary>
+            <p>No. We never sell personal information or use it for advertising, and we only share it with service providers we need to run an app, under terms that protect it.</p>
+          </details>
+          <details>
+            <summary>How do I report a security issue?</summary>
+            <p>Email us with "SECURITY" at the start of the subject line and we will treat it as a priority. Our <a href="support.html">support page</a> has the details.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact" data-theme="dark" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 id="contact-title" class="contact__title"><span class="line"><span class="line__in">Let's</span></span> <span class="line"><span class="line__in">talk.</span></span></h2>
+        <div class="contact__row">
+          <p>Questions about our apps, a partnership or a security report? A person will reply. We're in Gqeberha, South Africa, and work with teams in every time zone.</p>
+          <div class="contact__actions">
+            <a class="btn btn--blue" href="mailto:duncanmarcbentley@gmail.com?subject=Bentley%20Studios" data-magnetic>Email us</a>
+            <button class="copy mono" type="button" data-copy="duncanmarcbentley@gmail.com"><span data-copy-label>Copy email</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ftr" data-theme="dark">
+    <div class="wrap ftr__top">
+      <nav class="ftr__nav" aria-label="Footer">
+        <a href="privacy.html">Privacy policy</a>
+        <a href="support.html">Support</a>
+        <a href="https://duncanbentley.github.io/bentley-studios/">Creative work</a>
+      </nav>
+      <p class="mono ftr__meta">&copy; <span data-year>2026</span> Bentley Studios / Gqeberha, South Africa</p>
+      <button class="mono ftr__motion" type="button" data-motion-toggle aria-pressed="false">Pause motion</button>
+    </div>
+    <p class="ftr__word" aria-hidden="true">BENTLEY</p>
+  </footer>
+</body>
+</html>
